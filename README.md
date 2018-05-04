@@ -4,9 +4,11 @@ Project Name: Genesis
 ________________________________________
 Project Description
 Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of real-time data inside DNIF and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.
+
 Need
 
 Rapid communication of threats, attacks and cyber security alerts helps to quickly detect, respond and contain cyber-attacks. In-depth analysis can be also performed on the attacks and vulnerabilities to prevent future attack and provide a solution.
+
 Platform
 
 DNIF is an Open Big Data Analytics Platform that can ingest, parse, enrich large volumes of data each day and bounce back with actions using complex rules, profilers and machine learning models. 
@@ -22,9 +24,13 @@ We run DNIF using:
 Sources
 
 Most of the resources listed below provide lists and/or APIs to obtain (hopefully) up-to-date information with regards to threats/attacks. Some consider these sources as threat intelligence, opinions differ however. A certain amount of (domain- or business-specific) analysis is necessary to create true threat intelligence.
+
 Frameworks and Platforms
+
 Frameworks, platforms and services for collecting, analyzing, creating and sharing Threat Intelligence.
+
 Tools
+
 All kinds of tools for parsing, creating and editing Threat Intelligence. Mostly IOC based.
 Research, Standards and Books
 
