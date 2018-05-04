@@ -16,11 +16,11 @@ DNIF is an Open Big Data Analytics Platform that can ingest, parse, enrich large
 Visit https://dnif.it to know more.
 Dependencies
 
-We run DNIF using:
-•	Virtual Box
-•	JetBrains: PyCharm Community Edition
-•	Ubuntu 16.04 or above
-•	Docker
+We run DNIF using: </br>
+•	Virtual Box </br>
+•	JetBrains: PyCharm Community Edition</br>
+•	Ubuntu 16.04 or above</br>
+•	Docker</br>
 
 
 **Sources**
