@@ -1,8 +1,8 @@
 # SOC18-genesis
-Summer Of Code (SOC) - 2018, Genesis.
-**Project Name: Genesis**
-________________________________________
-===Project Description
+Summer Of Code (SOC) - 2018, Genesis.  
+**Project Name: Genesis**  
+________________________________________  
+**Project Description**
 Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of real-time data inside DNIF and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.  
  
 **Need**
