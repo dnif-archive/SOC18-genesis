@@ -15,13 +15,13 @@ Rapid communication of threats, attacks and cyber security alerts helps to quick
 DNIF is an Open Big Data Analytics Platform that can ingest, parse, enrich large volumes of data each day and bounce back with actions using complex rules, profilers and machine learning models. 
 Visit https://dnif.it to know more.
 Dependencies
-```
+
 We run DNIF using:
 •	Virtual Box
 •	JetBrains: PyCharm Community Edition
 •	Ubuntu 16.04 or above
 •	Docker
-```
+
 
 **Sources**
 
