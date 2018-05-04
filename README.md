@@ -2,10 +2,10 @@
 Summer Of Code (SOC) - 2018, Genesis.
 Project Name: Genesis
 ________________________________________
-Project Description
+##Project Description
 Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of real-time data inside DNIF and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.  
  
-Need
+##Need
 
 Rapid communication of threats, attacks and cyber security alerts helps to quickly detect, respond and contain cyber-attacks. In-depth analysis can be also performed on the attacks and vulnerabilities to prevent future attack and provide a solution.
 Platform
