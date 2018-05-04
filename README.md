@@ -37,7 +37,8 @@ All kinds of tools for parsing, creating and editing Threat Intelligence. Mostly
 
 All kinds of reading material about Threat Intelligence, data analysis, cyber analytics; includes (scientific) research and whitepapers.
 
-Data Driven Security
+**Data Driven Security**
+--- |
 Uncover hidden patterns of data and respond with countermeasures. Security professionals need all the tools at their disposal to increase their visibility in order to prevent security breaches and attacks. This careful guide explores two of the most powerful data analysis and visualization. You'll soon understand how to gather feedback, measure the effectiveness of your security methods, and make better decisions.
 	
 
