@@ -28,10 +28,12 @@ We run DNIF using:
 Most of the resources listed below provide lists and/or APIs to obtain (hopefully) up-to-date information with regards to threats/attacks. Some consider these sources as threat intelligence, opinions differ however. A certain amount of (domain- or business-specific) analysis is necessary to create true threat intelligence.
 
 **Frameworks and Platforms**
+
 Frameworks, platforms and services for collecting, analyzing, creating and sharing Threat Intelligence.
 
 **Tools**
-All kinds of tools for parsing, creating and editing Threat Intelligence. Mostly IOC based.
+
+All kinds of tools for parsing, creating and editing Threat Intelligence.
 
 **Research, Standards and Books**
 
