@@ -85,4 +85,5 @@ The real-time data should be fed to DNIF. Connector/API code is required while u
 **Step 3:**  
 Identify key parameters to raise alerts on the dashboard by performing queries and data analysis.  
  
-
+**Digrammatic Representation of the Process to be followed is as shown below :**
+![Process](https://user-images.githubusercontent.com/33835459/39711316-09db6e06-523d-11e8-8975-175ccc03622d.png)
