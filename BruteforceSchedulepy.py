@@ -1,9 +1,11 @@
 import schedule
 import time
-
+import requests
 import bs4
 from urllib.request import Request,urlopen
 from bs4 import BeautifulSoup as soup
+import csv
+import json
 #storing the website content
 my_url='http://bruteforcers.net/'
     
@@ -20,7 +22,7 @@ page_soup = soup(web_byte, "html.parser")
 filename="Bruteforce.txt"
 #Connection opened and headers added
 f=open(filename,"a")
-headers=("InternalId,Date,IPAddress,Type,Country,Organization \n")
+headers=("InternalId,Date,IPAddress,Type,Country,Organization,LogEvent,EvtLen \n")
 f.write(headers)
 def job():
     f=open(filename,"a")
@@ -40,9 +42,11 @@ def job():
         Organization_w= table_rows[a].find_all('td')[5].get_text().strip()
         #Avoiding "," as its is using it as delimeter in a csv(comma seperated value)
         Organization=Organization_w.replace(',', '.')
-        print(InternalId +"," + Date +","+ IPAddress +","+ Type +","+ Country +","+ Organization +"\n")
+        LogEvent="Test"
+        EvtLen="70"
+        print(InternalId +"," + Date +","+ IPAddress +","+ Type +","+ Country +","+ Organization +","+ LogEvent +","+ EvtLen +"\n")
     
-        f.write(InternalId +"," + Date +","+ IPAddress +","+ Type +","+ Country +","+ Organization +"\n")
+        f.write(InternalId +"," + Date +","+ IPAddress +","+ Type +","+ Country +","+ Organization +","+ LogEvent +","+ EvtLen +"\n")
         #fields=['InternalId','Date','IPAddress','Type','Country','Organization']
         
     f.close()
@@ -69,7 +73,24 @@ def dup_del():
     inFile.close()
     # un-comment to chk if dup is being deleted and being added to the csv file
     #print("dup del")
-    
+## code to change to JSON
+def csv2json():
+    csvfile = open('Bruteforce.csv', 'r')
+    jsonfile = open('Bruteforce.json', 'w')
+
+    fieldnames = ("InternalId","Date","IPAddress","Type","Country","Organization","LogEvent","EvtLen")
+    reader = csv.DictReader( csvfile, fieldnames)
+    out = json.dumps( [ row for row in reader ] )
+    jsonfile.write(out)
+    #code to POST command
+    headers = {'content-type': 'application/json'}
+    url = 'http://192.168.0.104:9234/json/receive'
+    data=json.dumps(out)
+    requests.post(url, data)
+    r=requests.post(url, data)
+    if r.status_code == requests.codes.ok:
+        print(r.text)
+
 #schedule the above jobs
 #Schedule to scrap
 schedule.every(5).seconds.do(job)
@@ -77,6 +98,7 @@ schedule.every(5).seconds.do(job)
 schedule.every(11).seconds.do(dup_del)
 #schedule.every(5).minutes.do(job)
 #schedule.every(11).minutes.do(dup_del)
+schedule.every(11).seconds.do(csv2json)
 
 # long run job case
 while True:
