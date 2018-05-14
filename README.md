@@ -10,7 +10,7 @@ Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed proc
 
 Rapid communication of threats, attacks and cyber security alerts helps to quickly detect, respond and contain cyber-attacks. In-depth analysis can be also performed on the attacks and vulnerabilities to prevent future attack and provide a solution.
 
-**Goal**
+**Objective**
 - Understanding DNIF Open Big Data Analytics Platform
 - Analysis of real-time data set
 - Generating alerts on DNIF console
