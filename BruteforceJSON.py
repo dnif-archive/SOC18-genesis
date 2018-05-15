@@ -9,15 +9,15 @@ import json
 #storing the website content
 my_url='http://bruteforcers.net/'
     
-req=Request(my_url, headers={'User-Agent': 'Mozilla/5.0'})
-web_byte = urlopen(req).read()
+#req=Request(my_url, headers={'User-Agent': 'Mozilla/5.0'})
+#web_byte = urlopen(req).read()
 # opening connection to grab the page html
 #uClient=req(my_url)
 #web_byte=uClient.read()
 #close the connection
 #uClient.close()
 
-page_soup = soup(web_byte, "html.parser")
+#page_soup = soup(web_byte, "html.parser")
 #csv creation
 filename="Bruteforce.txt"
 #Connection opened and headers added
@@ -25,6 +25,10 @@ f=open(filename,"a")
 headers=("InternalId,Date,IPAddress,Type,Country,Organization \n")
 f.write(headers)
 def job():
+    req=Request(my_url, headers={'User-Agent': 'Mozilla/5.0'})
+    web_byte = urlopen(req).read()
+    page_soup = soup(web_byte, "html.parser")
+    page_soup = soup(web_byte, "html.parser")
     f=open(filename,"a")
     
 #grabs all categories
