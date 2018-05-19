@@ -89,7 +89,7 @@ def truncate():
 
 schedule.every(30).minutes.do(job)
 
-schedule.every(60).minutes.do(dup_del)
+schedule.every(89).minutes.do(dup_del)
 
 schedule.every(90).minutes.do(csv2json)
 
