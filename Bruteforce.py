@@ -92,11 +92,11 @@ def truncate():
                   
 #schedule the above jobs
 
-schedule.every(30).seconds.do(job)
+schedule.every(30).minutes.do(job)
 
-schedule.every(60).seconds.do(dup_del)
+schedule.every(60).minutes.do(dup_del)
 
-schedule.every(62).seconds.do(csv2json)
+schedule.every(62).minutes.do(csv2json)
 
 schedule.every(95).minutes.do(truncate)
 
