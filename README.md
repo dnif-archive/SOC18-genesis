@@ -5,7 +5,7 @@ ________________________________________
 
 [**Project Description**](https://github.com/dnif/SOC18-genesis/wiki)
 
-Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of real-time data inside DNIF and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.
+Genesis is a ['DNIF](https://dnif.it/how-it-works.html) Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of [real-time data inside DNIF](https://dnif.it/how-it-works.html) and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.
 The main objective of this project is to work on real-time dataset, parse the data , store the data in the DNIF platform and perform analysis and provide the users the result in a form of Dashboard
 
 **Selection of the Datasource**
@@ -59,7 +59,7 @@ Hence we can concur that, the best way to detect a bruteforce attack is by prope
 
 
 **Platform**
-As mentioned earlier , the project is based on DNIF platform. But the platform had certain dependencies and certain other tools as belows:
+As mentioned earlier , the project is based on [DNIF platform](https://github.com/dnif/SOC18-genesis/wiki/Installation-Process-of-DNIF). But the platform had certain dependencies and certain other tools as belows:
 
 •	Virtual Box </br>
 •	JetBrains: PyCharm Community Edition</br>
