@@ -1,9 +1,9 @@
   
-## **Project Name: Genesis**  
+[## **Project Name: Genesis** ] (https://github.com/dnif/SOC18-genesis/wiki)
 ________________________________________  
 
 
-**Project Description**
+[**Project Description**](https://github.com/dnif/SOC18-genesis/wiki)
 
 Genesis is a 'DNIF Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of real-time data inside DNIF and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.
 The main objective of this project is to work on real-time dataset, parse the data , store the data in the DNIF platform and perform analysis and provide the users the result in a form of Dashboard
