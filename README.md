@@ -14,8 +14,8 @@ The datasource which was chosen was based on thorough discussion and based on re
 Hence, we have chosen the database : http://bruteforcers.net </br>
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network.
 
- <a href="https://www.youtube.com/watch?v=BM45k0meXkE" target="_blank"><img src="http://img.youtube.com/vi/BM45k0meXkE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="720" height="480" border="10" /></a>
+<p align="center"> <a href="https://www.youtube.com/watch?v=BM45k0meXkE" target="_blank"><img src="http://img.youtube.com/vi/BM45k0meXkE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" align="center" /></a></p>
 
 
 ***Need***
