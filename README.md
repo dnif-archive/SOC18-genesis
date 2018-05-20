@@ -1,6 +1,5 @@
   
 <h1> Project Name: Genesis </h1>
-________________________________________  
 
 
 [**Project Description**](https://github.com/dnif/SOC18-genesis/wiki)
@@ -39,7 +38,7 @@ Brute force attacks are difficult to stop, but they aren’t difficult to spot. 
 
 The simplest defense for Brute Force attacks is to maintain cyber hygiene like:
 
---Users should have complex passwords that are long and use a combination of letters, special characters, numbers and upper- and lower-case letters.</br>
+> •Users should have complex passwords that are long and use a combination of letters, special characters, numbers and upper- and lower-case letters.</br>
 
 From an IT perspective, prevention measures include </br>
 > •Locking a login page for a certain amount of time after failed logins,</br>
@@ -59,6 +58,7 @@ Hence we can concur that, the best way to detect a bruteforce attack is by prope
 
 
 **Platform**
+
 As mentioned earlier , the project is based on [DNIF platform](https://github.com/dnif/SOC18-genesis/wiki/Installation-Process-of-DNIF). But the platform had certain dependencies and certain other tools as belows:
 
 •	Virtual Box </br>
