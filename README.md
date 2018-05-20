@@ -1,5 +1,5 @@
   
-<h1> Project Name: Genesis </h1>
+<h1> Genesis </h1>
 
 
 **Project Description**
