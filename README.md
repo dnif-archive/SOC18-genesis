@@ -15,7 +15,7 @@ Hence, we have chosen the database : http://bruteforcers.net
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network.
 
  
-**Need**
+***Need***
 
 Rapid communication of threats, attacks and cyber security alerts helps to quickly detect, respond and contain cyber-attacks. In-depth analysis can be also performed on the attacks and vulnerabilities to prevent future attack and provide a solution.
 *Detecting Brute Force Attacks*
@@ -32,7 +32,7 @@ Brute force attacks are difficult to stop, but they aren’t difficult to spot. 
 > •A large number of authentication failures</br>
 
 
-*Prevention Methods*
+***Prevention Methods***
 
 The simplest defense for Brute Force attacks is to maintain cyber hygiene like:
 
