@@ -71,4 +71,46 @@ All kinds of tools for parsing, creating and editing can be used for Threat Inte
 But in this project we used simple Python based code to parse the data out of the data source. This helped us to use Python based libraries like Beautiful Soup ver 4.0 in our code. Using the same we were also free to store the data in the required format i.e., the xls/json/csv formats to store the data and further post the data to the platform used (DNIF). 
 As per the need of posting the data we also used certain tools like Postman to POST the data but parallelly same functionality using the code.
 
+**Identification of Key Indicators in the Dataset**
+
+<table class="tg">
+  <tr>
+    <th class="tg-baqh" colspan="3">Key Indicators</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">Sr No.</th>
+    <th class="tg-baqh">Key Indicators</th>
+    <th class="tg-baqh">Description</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">1.</td>
+    <td class="tg-baqh">Internal ID</td>
+    <td class="tg-baqh">	Indicates a unique identification for each bruteforce attack in the network originating from a given IP Address from a specific location.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">2.</td>
+    <td class="tg-baqh">Date</td>
+    <td class="tg-baqh">Indicates  Current Date of the originated attack.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">3.</td>
+    <td class="tg-baqh">IP Address</td>
+    <td class="tg-baqh">Source IP Address for the Identified attack on the network.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">4.</td>
+    <td class="tg-baqh">Type</td>
+    <td class="tg-baqh">Type of the server in the Network.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">5.</td>
+    <td class="tg-baqh">Country</td>
+    <td class="tg-baqh">Country from which the attack originated.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">6.</td>
+    <td class="tg-baqh">Organization</td>
+    <td class="tg-baqh">Organization from which the attack originated.</td>
+  </tr>
+</table>
 
