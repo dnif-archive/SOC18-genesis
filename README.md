@@ -22,21 +22,14 @@ Rapid communication of threats, attacks and cyber security alerts helps to quick
 
 Brute force attacks are difficult to stop, but they aren’t difficult to spot. Some of the methods to detect the attacks are as follows:
 
---Each failed login attempt records an HTTP 401 status code, so monitoring log files can let you know if you’re under attack.</br>
-
---Several failed login attempts from the same IP address</br>
-
---Logins with multiple username attempts from the same IP address</br>
-
---Logins for a single account from many different IP addresses</br>
-
---Failed login attempts from alphabetically sequential usernames and passwords</br>
-
---Logins with a referring URL of someone’s mail</br>
-
---Excessive bandwidth consumption over the course of a single session</br>
-
---A large number of authentication failures</br>
+> •Each failed login attempt records an HTTP 401 status code, so monitoring log files can let you know if you’re under attack.</br>
+> •Several failed login attempts from the same IP address</br>
+> •Logins with multiple username attempts from the same IP address</br>
+> •Logins for a single account from many different IP addresses</br>
+> •Failed login attempts from alphabetically sequential usernames and passwords</br>
+> •Logins with a referring URL of someone’s mail</br>
+> •Excessive bandwidth consumption over the course of a single session</br>
+> •A large number of authentication failures</br>
 
 
 *Prevention Methods*
@@ -46,13 +39,13 @@ The simplest defense for Brute Force attacks is to maintain cyber hygiene like:
 --Users should have complex passwords that are long and use a combination of letters, special characters, numbers and upper- and lower-case letters.</br>
 
 From an IT perspective, prevention measures include </br>
-> Locking a login page for a certain amount of time after failed logins,</br>
-> Extending the time between two logins when a wrong password is entered,</br>
-> Two-factor authentication, </br>
-> Using CAPTCHA to prevent automated attacks,</br>
-> Locking out an IP address with multiple failed logins.</br>
-> Using pattern of attacks and allocate control based resources likewise so as to avoid the attempts of attack</br>
-> Implementation of web application based and multi layered firewall would help to avoid such attacks</br>
+> •Locking a login page for a certain amount of time after failed logins,</br>
+> •Extending the time between two logins when a wrong password is entered,</br>
+> •Two-factor authentication, </br>
+> •Using CAPTCHA to prevent automated attacks,</br>
+> •Locking out an IP address with multiple failed logins.</br>
+> •Using pattern of attacks and allocate control based resources likewise so as to avoid the attempts of attack</br>
+> •Implementation of web application based and multi layered firewall would help to avoid such attacks</br>
 
 
 Though these steps may hinder some attacks, for persistent hackers, it may just slow down their efforts, not stop them. And more sophisticated hackers—particular those using botnets—can circumvent some of these measures.In fact, some prevention methods, such as locking accounts, can backfire. Perpetrators can abuse the security measure and lock out hundreds of user accounts and launch a denial of service (DoS) attack.
