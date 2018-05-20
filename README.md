@@ -32,30 +32,13 @@ We run DNIF using: </br>
 
 Most of the resources listed below provide lists and/or APIs to obtain (hopefully) up-to-date information with regards to threats/attacks. Some consider these sources as threat intelligence, opinions differ however. A certain amount of (domain- or business-specific) analysis is necessary to create true threat intelligence.
 
-**Frameworks and Platforms**
-
-Frameworks, platforms and services for collecting, analyzing, creating and sharing Threat Intelligence.
 
 **Tools**
 
-All kinds of tools for parsing, creating and editing Threat Intelligence.
+All kinds of tools for parsing, creating and editing can be used for Threat Intelligence.
+But in this project we used simple Python based code to parse the data out of the data source. This helped us to use Python based libraries like Beautiful Soup ver 4.0 in our code. Using the same we were also free to store the data in the required format i.e., the xls/json/csv formats to store the data and further post the data to the platform used (DNIF). 
+As per the need of posting the data we also used certain tools like Postman to POST the data but parallelly same functionality using the code.
 
-**Research, Standards and Books**
-
-All kinds of reading material about Threat Intelligence, data analysis, cyber analytics; includes (scientific) research and whitepapers.
-
-[**Data Driven Security**](http://index-of.es/Varios/Jay%20Jacobs,%20Bob%20Rudis-Data-Driven%20Security_%20Analysis,%20Visualization%20and%20Dashboards-Wiley%20(2014).pdf)
---- |
-Uncover hidden patterns of data and respond with countermeasures. Security professionals need all the tools at their disposal to increase their visibility in order to prevent security breaches and attacks. This careful guide explores two of the most powerful data analysis and visualization. You'll soon understand how to gather feedback, measure the effectiveness of your security methods, and make better decisions.
-	
-
-
-
-
-
-
-
-________________________________________
 
 
 
@@ -89,6 +72,23 @@ Select a data-set that provides real time exchange of threat data for cyber-atta
 The real-time data should be fed to DNIF. Connector/API code is required while uploading the data-set to DNIF.  
 **Step 3:**  
 Identify key parameters to raise alerts on the dashboard by performing queries and data analysis.  
+
+**Research, Standards and Books**
+
+All kinds of reading material about Threat Intelligence, data analysis, cyber analytics; includes (scientific) research and whitepapers.
+
+[**Data Driven Security**](http://index-of.es/Varios/Jay%20Jacobs,%20Bob%20Rudis-Data-Driven%20Security_%20Analysis,%20Visualization%20and%20Dashboards-Wiley%20(2014).pdf)
+--- |
+Uncover hidden patterns of data and respond with countermeasures. Security professionals need all the tools at their disposal to increase their visibility in order to prevent security breaches and attacks. This careful guide explores two of the most powerful data analysis and visualization. You'll soon understand how to gather feedback, measure the effectiveness of your security methods, and make better decisions.
+	
+
+
+
+
+
+
+
+________________________________________
  
 **Digrammatic Representation of the Process to be followed is as shown below :**
 ![Process](https://user-images.githubusercontent.com/33835459/39711316-09db6e06-523d-11e8-8975-175ccc03622d.png)
