@@ -7,6 +7,10 @@
 Genesis is a ['DNIF](https://dnif.it/how-it-works.html) Open Source' project which aims at exhibiting a detailed process of ingesting large volumes of [real-time data inside DNIF](https://dnif.it/how-it-works.html) and performing operations on it and generating alerts. DNIF also serves as analytics tool to be able to query our data to look for a specific item or chain of events.
 The main objective of this project is to work on real-time dataset, parse the data , store the data in the DNIF platform and perform analysis and provide the users the result in a form of Dashboard.
 
+
+<p align="center"> <a href="https://www.youtube.com/watch?v=05JhwxznOmg" target="_blank"><img src="http://img.youtube.com/vi/05JhwxznOmg/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" align="center" /></a></p>
+
 Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step by step process carried out during each phase of the project in detail for a better understanding.
 
 **Selection of the Datasource**
