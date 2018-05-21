@@ -126,3 +126,152 @@ As per the need of posting the data we also used certain tools like [Postman to 
 <p align="center"> <a href="https://www.youtube.com/watch?v=LpgrAo6DI8A" target="_blank"><img src="http://img.youtube.com/vi/LpgrAo6DI8A/1.jpg" 
 alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 
+## Analysis using DQL and Dashboard
+
+### 1. Analysis according to Country
+Query Used
+
+`_fetch * from bruteforcenew limit 1000`
+`>>_aggcount_unique $Country`
+ 
+ ![image](https://user-images.githubusercontent.com/37012140/40331608-8ea8c37c-5d6e-11e8-9c0b-404e099c0353.png)
+ 
+ ![image](https://user-images.githubusercontent.com/37012140/40331616-92f64cec-5d6e-11e8-9e41-2dfbb776253e.png)
+ 
+ 
+According to this report we can identify the origin of the attack and create a more preventive environment. From the report Brazil is the origin of most attacks so if an request from that location arrives on network we divert it to a reCAPTCHA page so that we examine if the request is automated or not if it’s an automated request then it would be blocked.  So Top 5 countries on the list get diverted to preventive environment.
+
+### 2. Analysis according to Organisation attacked using Wordpress script
+Query Used
+
+`_fetch * from bruteforcenew where $Type=Wordpress limit 100`
+`>>_aggcount_unique $Organization`
+ 
+ ![image](https://user-images.githubusercontent.com/37012140/40331624-9887ec42-5d6e-11e8-9bda-76493e3ec655.png)
+ 
+ ![image](https://user-images.githubusercontent.com/37012140/40331630-9cff6ca0-5d6e-11e8-97ec-49750d0dc0c4.png)
+ 
+From this report we can establish that from which organization most Wordpress brute force script attack occurs. So if a request from Top 10 organisation comes it would get blocked or it would be taken to the preventive environment like reCAPTCHA. So to mitigate the attack. If an organization continuously increases its attacks then all the request from that website would get blocked until it is resolved. 
+### 3. Analysis of attack density from a region
+Query Used
+
+`_fetch * from bruteforcenew limit 100`
+`>>_aggcount_unique $Country`
+
+Chart Type : Geo Map </br>
+
+Country_CodeFields : $Country  </br>
+
+Value :Count_Unique </br>
+ 
+![image](https://user-images.githubusercontent.com/37012140/40331633-a1a4877c-5d6e-11e8-9d91-d893859fcee5.png)
+
+
+![image](https://user-images.githubusercontent.com/37012140/40331641-a5539af2-5d6e-11e8-8434-3a6eef9080d4.png)
+
+ 
+From above data we can conclude the region from which most attacks originates so requests from South Asia, South and North America  are more likely to be monitored and go through reCAPTCHA page then the request originated from Oceanic region. Multilayer firewall are applied for the request originated from risky location.
+
+
+
+
+
+
+
+
+
+### 4.Analysis of SSH brute force attack from a country on a specific date
+Query Used
+
+`_fetch * from bruteforcenew where Date=18-05-2018 AND $Type=SSH limit 1000`
+`>>_aggcount_unique $Country`
+ </br>
+ 
+Pie Chart
+
+![image](https://user-images.githubusercontent.com/37012140/40331649-aa996f46-5d6e-11e8-843f-12d56040c7c2.png)
+
+![image](https://user-images.githubusercontent.com/37012140/40331654-aef68af6-5d6e-11e8-9de4-74aa648c5424.png)
+
+This data allow us to analyse amount of SSH attack originated from a particular country on a specific date. So from this data we can block all the request originated from China on 18/05/2018 as 9 brute force ssh attack happed only on 18/05/2018 so all the request originating from China would be blocked until further preventions are taken. Requests originates from U.S.A. are diverted to reCAPTCHA page for detecting Automation attacks or script attack.  
+
+### 5. Most attack originating from a Organisation
+Query Used
+
+
+`_fetch * from bruteforcenew limit 1000`
+`>> _agg max $Organisation`
+ </br>
+ 
+Result: netvision
+
+![image](https://user-images.githubusercontent.com/37012140/40331662-b43487fc-5d6e-11e8-9a41-5b68d09ebbaf.png)
+
+![image](https://user-images.githubusercontent.com/37012140/40331669-b81e4678-5d6e-11e8-9bb8-0a5a8ce19b9e.png)
+ 
+From this data we determine which Organisation generates most brute force attack. So that we can block all the request originated from that Organisation.
+
+
+
+
+### 6. Most attack originating from a Country
+Query Used
+
+
+`_fetch * from bruteforcenew limit 100`
+`>> _agg max $Country`
+
+ </br>
+Result : n/a
+ 
+![image](https://user-images.githubusercontent.com/37012140/40331674-bd30534a-5d6e-11e8-97a2-081db9825ffc.png)
+
+![image](https://user-images.githubusercontent.com/37012140/40331681-c29fc838-5d6e-11e8-8ffa-bc7d3a24729d.png)
+ 
+From above data we can determine which country producing most attacks from which we can block the entire request originating from a country or using preventive measures like Multilayer firewall and reCAPTCHA test for determining automation attacks.
+
+
+
+
+
+
+### 7. Analysing attacks originated from a specific IP Address
+Query used
+
+`_fetch $IPAddress , $Country  , $Organization from bruteforcenew where $Country=India AND $Type=Wordpress AND $Date=18-05-2018 limit 100>>_aggcount_unique $IPAddress , $Organization`
+
+![image](https://user-images.githubusercontent.com/37012140/40331687-c7e14f06-5d6e-11e8-9e04-f24e6c00fc21.png)
+
+![image](https://user-images.githubusercontent.com/37012140/40331696-cbf2f356-5d6e-11e8-8837-43d4f9b1fbf8.png)
+ 
+From this data we can examine each IP Address and amount of attack it generates so that it can be blocked and strictly prohibit any further connection with most attacks generated from a specific IP Address. From above data we can see that 223.189.229.208 which is from Airtel Organisation.  
+
+
+### 8. Analysing attacks according to its  type
+Query used
+
+`_fetch * from bruteforcenew limit 1000>>_aggcount_unique $Type`
+ 
+![image](https://user-images.githubusercontent.com/37012140/40331704-d1273206-5d6e-11e8-8948-1e3333f25ed5.png)
+
+![image](https://user-images.githubusercontent.com/37012140/40331710-d54a44a4-5d6e-11e8-8113-1bcadd3b1738.png)
+ 
+From this information we can examine that which brute force attack happens and it amount. So from this information we can conclude WORDPRESS type has most attack and can set up mitigation techniques like reCAPTCHA and Multilayered Firewall for blocking any request with this and also create new techniques to mitigate it. 
+
+
+
+
+### 9. Analysis of Most specific type of attack on a day
+Query Used  </br>
+
+
+` _fetch * from bruteforcenew limit 1000 `
+`>>_aggcount_unique $Date,$Type`
+
+![image](https://user-images.githubusercontent.com/37012140/40331717-d9415a34-5d6e-11e8-8f9e-e219a7d7b1ca.png)
+![image](https://user-images.githubusercontent.com/37012140/40331722-dd19eb6c-5d6e-11e8-9773-73b40e3c5ea6.png)
+
+ 
+ 
+From this information we can determine type of attack happened on a specific date and according to that we can create an model to predict which type of attack most likely to happen on specific date using time series analysis.
+
