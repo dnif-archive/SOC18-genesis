@@ -9,7 +9,7 @@ The main objective of this project is to work on real-time dataset, parse the da
 
 
 <p align="center"> <a href="https://www.youtube.com/watch?v=05JhwxznOmg" target="_blank"><img src="http://img.youtube.com/vi/05JhwxznOmg/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" align="center" /></a></p>
+alt="Roadmap-Team Genesis" width="360" height="280" border="10" align="center" /></a></p>
 
 Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step by step process carried out during each phase of the project in detail for a better understanding.
 
@@ -20,7 +20,7 @@ Hence, we have chosen the database : http://bruteforcers.net </br>
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network.
 
 <p align="center"> <a href="https://www.youtube.com/watch?v=BM45k0meXkE" target="_blank"><img src="http://img.youtube.com/vi/BM45k0meXkE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" align="center" /></a></p>
+alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 
 
 ***Need***
