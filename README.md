@@ -11,7 +11,7 @@ Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step b
 
 **Selection of the Datasource**
 
-The datasource which was chosen was based on thorough discussion and based on [real-world test cases](https://github.com/dnif/SOC18-genesis/wiki/Research-on-Various-Datasets---Static-and-Dynamic-Datasets). Upon discussion we were able to understand that upon multiple type of attacks in the present cyberworld, bruteforce attacks / dictionary attacks are one of the most troublesome and most puny attack in front of the cyberworld.
+The datasource which was chosen was based on thorough discussion and based on [real-world test cases](https://github.com/dnif/SOC18-genesis/wiki/Research-on-Various-Datasets-Static-and-Dynamic-Datasets). Upon discussion we were able to understand that upon multiple type of attacks in the present cyberworld, bruteforce attacks / dictionary attacks are one of the most troublesome and most puny attack in front of the cyberworld.
 Hence, we have chosen the database : http://bruteforcers.net </br>
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network.
 
