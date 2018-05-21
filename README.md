@@ -11,7 +11,7 @@ Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step b
 
 **Selection of the Datasource**
 
-The datasource which was chosen was based on thorough discussion and based on real-world test cases. Upon discussion we were able to understand that upon multiple type of attacks in the present cyberworld, bruteforce attacks / dictionary attacks are one of the most troublesome and most puny attack in front of the cyberworld.
+The datasource which was chosen was based on thorough discussion and based on [real-world test cases](https://github.com/dnif/SOC18-genesis/wiki/Research-on-Various-Datasets---Static-and-Dynamic-Datasets). Upon discussion we were able to understand that upon multiple type of attacks in the present cyberworld, bruteforce attacks / dictionary attacks are one of the most troublesome and most puny attack in front of the cyberworld.
 Hence, we have chosen the database : http://bruteforcers.net </br>
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network.
 
@@ -73,8 +73,8 @@ As mentioned earlier , the project is based on [DNIF platform](https://github.co
 **Tools**
 
 All kinds of tools for parsing, creating and editing can be used for Threat Intelligence.
-But in this project we used simple Python based code to parse the data out of the data source. This helped us to use Python based libraries like Beautiful Soup ver 4.0 in our code. Using the same we were also free to store the data in the required format i.e., the xls/json/csv formats to store the data and further post the data to the platform used (DNIF). 
-As per the need of posting the data we also used certain tools like Postman to POST the data but parallelly same functionality using the code.
+But in this project we used simple [Python based code](https://github.com/dnif/SOC18-genesis/wiki/Choose-a-real-time-data-set-(csv,-excel-or-json)-or-fetch-it-using-web-scraping-code-%5BCODE-Explanation%5D) to parse the data out of the data source. This helped us to use Python based libraries like Beautiful Soup ver 4.0 in our code. Using the same we were also free to store the data in the required format i.e., the xls/json/csv formats to store the data and further post the data to the platform used (DNIF). 
+As per the need of posting the data we also used certain tools like [Postman to POST the data](https://github.com/dnif/SOC18-genesis/wiki/Static) but parallelly same [functionality using the code](https://github.com/dnif/SOC18-genesis/wiki/Dynamic).
 
 **Identification of Key Indicators for the selected Dataset**
 
