@@ -76,7 +76,7 @@ All kinds of tools for parsing, creating and editing can be used for Threat Inte
 But in this project we used simple Python based code to parse the data out of the data source. This helped us to use Python based libraries like Beautiful Soup ver 4.0 in our code. Using the same we were also free to store the data in the required format i.e., the xls/json/csv formats to store the data and further post the data to the platform used (DNIF). 
 As per the need of posting the data we also used certain tools like Postman to POST the data but parallelly same functionality using the code.
 
-**Identification of Key Indicators in the Dataset**
+**Identification of Key Indicators for the selected Dataset**
 
 <table class="tg">
   <tr>
