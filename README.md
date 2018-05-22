@@ -132,20 +132,21 @@ alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 > 2. Clone the repository using the following command:
      
      git clone https://github.com/dnif/SOC18-genesis.git Genesis_Bruteforce
+     
 > 3. Open the location of the file
 > > a. For replicating a Static Dataset (at a instance of time)
 
-      `cd Genesis_Bruteforce\Static`
+      cd Genesis_Bruteforce\Static
       
 > > Run the python file
 
-      `python BruteForceStatic.py`
+      python BruteForceStatic.py
 > >    Follow the steps to [post the local dataset](https://github.com/dnif/SOC18-genesis/wiki/Static)
 
 
 > > b. For getting Dynamic Dataset
 
-     ` cd Genesis_Bruteforce\Dynamic `
+     cd Genesis_Bruteforce\Dynamic 
 
 > >    Change the IP address Location in the code
 > >    `#code to POST command
@@ -162,7 +163,7 @@ alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
     
 > > Run the python file
 
-    `python BruteForceDynamic.py`
+    python BruteForceDynamic.py
 
 > 4. Check for the [analysis](https://github.com/dnif/SOC18-genesis/wiki/Identify-key-parameters-of-the-datacollected-on-the-dashboard-by-performing-queries-and-data-analysis) running the following DQLs. Refer [here](https://github.com/dnif/SOC18-genesis/wiki/Upload-the-data-set-to-the-DNIF-Console-using-Event-Store) for using DQLs.
        
