@@ -126,6 +126,49 @@ As per the need of posting the data we also used certain tools like [Postman to 
 <p align="center"> <a href="https://www.youtube.com/watch?v=LpgrAo6DI8A" target="_blank"><img src="http://img.youtube.com/vi/LpgrAo6DI8A/1.jpg" 
 alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 
+## Using this Repository and Set up
+
+> 1. Install the DNIF package. Follow the steps from [here](https://github.com/dnif/SOC18-genesis/wiki/Installation-Process-of-DNIF)
+> 2. Clone the repository using the following command:
+     
+     git clone https://github.com/dnif/SOC18-genesis.git Genesis_Bruteforce
+> 3. Open the location of the file
+> > a. For replicating a Static Dataset (at a instance of time)
+
+      `cd Genesis_Bruteforce\Static`
+      
+> > Run the python file
+
+      `python BruteForceStatic.py`
+> >    Follow the steps to [post the local dataset](https://github.com/dnif/SOC18-genesis/wiki/Static)
+
+
+> > b. For getting Dynamic Dataset
+
+> >      ` cd Genesis_Bruteforce\Dynamic `
+
+> >    Change the IP address Location
+> >    `#code to POST command
+
+    headers = {'content-type': 'application/json'}
+    
+    url = 'http://<IP Address>/json/receive'
+    
+    data=json.dumps(out)
+    
+    requests.post(url, out)
+    
+    r=requests.post(url, out)`
+    
+> > Run the python file
+
+> >    `python BruteForceDynamic.py`
+
+> 4. Check for the [analysis](https://github.com/dnif/SOC18-genesis/wiki/Identify-key-parameters-of-the-datacollected-on-the-dashboard-by-performing-queries-and-data-analysis) running the following DQLs. Refer [here](https://github.com/dnif/SOC18-genesis/wiki/Upload-the-data-set-to-the-DNIF-Console-using-Event-Store) for using DQLs.
+       
+       
+
+
 ## Analysis using DQL and Dashboard
 
 ### 1. Analysis according to Country
