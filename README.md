@@ -147,7 +147,7 @@ alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 
      ` cd Genesis_Bruteforce\Dynamic `
 
-> >    Change the IP address Location
+> >    Change the IP address Location in the code
 > >    `#code to POST command
 
     headers = {'content-type': 'application/json'}
@@ -158,7 +158,7 @@ alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
     
     requests.post(url, out)
     
-    r=requests.post(url, out)`
+    r=requests.post(url, out)
     
 > > Run the python file
 
