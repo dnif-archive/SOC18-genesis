@@ -13,6 +13,7 @@ alt="Roadmap-Team Genesis" width="360" height="280" border="10" align="center" /
 
 ##### Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step by step process carried out during each phase of the project in detail for a better understanding.
 ### Contents
+-------------------------------------------------------------------------------------------------------------------
 #### [Home](https://github.com/dnif/SOC18-genesis/wiki)
  > ### PHASE 1
 > > #### [Step 1: DNIF Installation Process](https://github.com/dnif/SOC18-genesis/wiki/Installation-Process-of-DNIF)
@@ -29,6 +30,9 @@ alt="Roadmap-Team Genesis" width="360" height="280" border="10" align="center" /
 > > > [Dynamic (Code Used)](https://github.com/dnif/SOC18-genesis/wiki/Dynamic)
 > > #### [Step 3: Identify key parameters of the datacollected on the dashboard by performing queries and data analysis](https://github.com/dnif/SOC18-genesis/wiki/Identify-key-parameters-of-the-datacollected-on-the-dashboard-by-performing-queries-and-data-analysis)
 > > #### [Step 4: Guideline for SMTP Configuration with DNIF](https://github.com/dnif/SOC18-genesis/wiki/Setup-SMTP-Configuration-with-DNIF-for-Alerts-Generation)
+
+-------------------------------------------------------------------------------------------------------------
+
 **Selection of the Datasource**
 
 The datasource which was chosen was based on thorough discussion and based on [real-world test cases](https://github.com/dnif/SOC18-genesis/wiki/Research-on-Various-Datasets-Static-and-Dynamic-Datasets). Upon discussion we were able to understand that upon multiple type of attacks in the present cyberworld, bruteforce attacks / dictionary attacks are one of the most troublesome attack in front of the cyberworld.
