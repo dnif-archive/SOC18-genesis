@@ -8,7 +8,7 @@ Genesis is a ['DNIF](https://dnif.it/how-it-works.html) Open Source' project whi
 The main objective of this project is to work on real-time dataset, parse the data , store the data in the DNIF platform and perform analysis and provide the users the result in a form of Dashboard.
 
 
-<p align="center"> <a href="https://www.youtube.com/watch?v=05JhwxznOmg" target="_blank"><img src="https://user-images.githubusercontent.com/37012140/41401211-d808477e-6fdc-11e8-8aca-45f103712c31.jpg" 
+<p align="center"> <a href="https://www.youtube.com/watch?v=05JhwxznOmg" target="_blank"><img src="https://user-images.githubusercontent.com/37012140/41403328-3bd7e912-6fe2-11e8-9078-41d3409d2dba.jpg" 
 alt="Roadmap-Team Genesis" width="360" height="280" border="10" align="center" /></a></p>
 
 ##### Please refer https://github.com/dnif/SOC18-genesis/wiki to understand the step by step process carried out during each phase of the project in detail for a better understanding.
@@ -39,7 +39,7 @@ The datasource which was chosen was based on thorough discussion and based on [r
 Hence, we have chosen the datsource : http://bruteforcers.net </br>
 as our database. This datasource simply provides us data based on the bruteforce attacks which has been made to the specific network. 
 
-<p align="center"> <a href="https://www.youtube.com/watch?v=BM45k0meXkE" target="_blank"><img src="http://img.youtube.com/vi/BM45k0meXkE/0.jpg" 
+<p align="center"> <a href="https://www.youtube.com/watch?v=BM45k0meXkE" target="_blank"><img src=https://user-images.githubusercontent.com/37012140/41403339-41cba020-6fe2-11e8-9796-95c5ae966066.jpg" 
 alt="Bruteforce" width="360" height="280" border="10" align="center" /></a></p>
 
 
