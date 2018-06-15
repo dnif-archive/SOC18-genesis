@@ -1,7 +1,7 @@
 import schedule
 import time
 
-import bs4
+import bs4,requests
 from urllib.request import Request,urlopen
 from bs4 import BeautifulSoup as soup
 import csv
